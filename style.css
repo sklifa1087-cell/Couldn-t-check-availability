@@ -9,6 +9,7 @@
     margin: 0 auto;
     width: 100%;
     /* 📍 Максимальная ширина для контейнера */
+    max-width: 1140px;
 }
 
 body {
@@ -32,14 +33,22 @@ header span {
     padding: 60px 0;
     min-height: 100vh;
     /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
 
 .main-section .wrapper {
     /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-wrapper {
     /* 📍 Cвойство для ограничения ширины блока с текстом в первой секции */
+    max-width: 425px ;
 }
 
 .main-title {
@@ -64,6 +73,9 @@ header span {
 
 .about-section .wrapper {
     /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 select {
@@ -87,6 +99,8 @@ select:hover,
 
 .info-wrapper {
     /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
+    display: flex;
+    justify-content: center;
 }
 
 .section-title {
@@ -103,7 +117,10 @@ select:hover,
 .frameworks-list,
 .books-list {
     /* 📍 Свойства flexbox для отступов между элементами в списках */
-}
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}   
 
 .frameworks-list {
     font-weight: 400;
@@ -114,21 +131,30 @@ select:hover,
 
 .skills-block {
     /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .skills {
     /* 📍 Свойства flexbox для расположения элементов с классом .label */
+    min-width: 475px;
 }
 
 .books-list {
     font-weight: 400;
     font-size: 16px;
     padding-left: 20px;
+    min-width: 420px;
+    
 }
 
 .label {
     font-weight: 400;
     font-size: 16px;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 form {
@@ -160,6 +186,9 @@ form {
 
 .btn:hover {
     /* 📍 Стили для кнопки при наведении курсора */
+    cursor: pointer;
+    border: 1px solid #2965F1;
+    
 }
 
 .line {
@@ -172,6 +201,7 @@ table {
     font-weight: 400;
     font-size: 14px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 th, td {
@@ -181,7 +211,9 @@ th, td {
 footer {
     background-color: rgba(163, 167, 255, 0.3);
     padding: 26px 0;
-    /* 📍 Свойство для расположения ссылки горизонтально по центру */
+    /* 📍 Свойство для расположения ссылки горизонтально по центру */;
+    text-align: center;
+
 }
 
 .footer-link {
@@ -193,4 +225,5 @@ footer {
 
 .footer-link:hover {
     /* 📍 Стили для ссылки при наведении курсора */
+    text-decoration: underline;
 }
