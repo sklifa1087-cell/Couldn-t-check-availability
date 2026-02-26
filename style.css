@@ -94,6 +94,7 @@ select {
 select:hover,
 .text-field:hover {
     /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
+    border: 1px solid #2965F1
 }
 
 
