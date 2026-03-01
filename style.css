@@ -34,7 +34,7 @@ header span {
     min-height: 100vh;
     /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     
 } 
